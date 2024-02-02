@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "A94D3CFD-C7B6-467E-BE58-1596B5F97C26"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4F7527A9-4265-4EC8-A253-2A98FDFA3671"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Menu/UIKit/ContentService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "getItemData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4F7527A9-4265-4EC8-A253-2A98FDFA3671 - 47fb1076de0f056f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Foundation.Data) -&gt; () in closure #1 (Swift.CheckedContinuation&lt;Swift.Array&lt;Menu.MenuItem&gt;, Swift.Error&gt;) -&gt; () in Menu.ContentService.getItemData() async throws -&gt; Swift.Array&lt;Menu.MenuItem&gt;"
+                  moduleName = "Menu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tibin/Downloads/Menu2/Menu/UIKit/ContentService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "200">
+               </Location>
+               <Location
+                  uuid = "4F7527A9-4265-4EC8-A253-2A98FDFA3671 - 47fb1076de0f0548"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Foundation.Data) -&gt; () in closure #1 (Swift.CheckedContinuation&lt;Swift.Array&lt;Menu.MenuItem&gt;, Swift.Error&gt;) -&gt; () in Menu.ContentService.getItemData() async throws -&gt; Swift.Array&lt;Menu.MenuItem&gt;"
+                  moduleName = "Menu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tibin/Downloads/Menu2/Menu/UIKit/ContentService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "4F7527A9-4265-4EC8-A253-2A98FDFA3671 - 47fb1076de0f0436"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Foundation.Data) -&gt; () in closure #1 (Swift.CheckedContinuation&lt;Swift.Array&lt;Menu.MenuItem&gt;, Swift.Error&gt;) -&gt; () in Menu.ContentService.getItemData() async throws -&gt; Swift.Array&lt;Menu.MenuItem&gt;"
+                  moduleName = "Menu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tibin/Downloads/Menu2/Menu/UIKit/ContentService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "4F7527A9-4265-4EC8-A253-2A98FDFA3671 - f2068ef36597c8eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Foundation.Data) -&gt; () in closure #1 (Swift.CheckedContinuation&lt;Swift.Array&lt;Menu.MenuItem&gt;, Swift.Error&gt;) -&gt; () in Menu.ContentService.getItemData() async throws -&gt; Swift.Array&lt;Menu.MenuItem&gt;"
+                  moduleName = "Menu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tibin/Documents/10x%20Enginner/iOS%20Learning/Playgrounds/Menu2/Menu/UIKit/ContentService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "4F7527A9-4265-4EC8-A253-2A98FDFA3671 - 5ce1223273cb720a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Foundation.Data) -&gt; () in closure #1 (Swift.CheckedContinuation&lt;Swift.Array&lt;Menu.MenuItem&gt;, Swift.Error&gt;) -&gt; () in Menu.ContentService.getItemData() async throws -&gt; Swift.Array&lt;Menu.MenuItem&gt;"
+                  moduleName = "Menu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tibin/Documents/10xEnginner/iOSLearning/100DayOfCode/SwiftUI/Menu2/Menu/UIKit/ContentService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "104">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5BD98104-F5D1-4553-9FA1-8C163397D51B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Menu/SwiftUI/ContentServiceCombine.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "fetchdata()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5BD98104-F5D1-4553-9FA1-8C163397D51B - 7b411f59631ef50c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Menu.ContentServiceViewModel.fetchdata() -&gt; ()"
+                  moduleName = "Menu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tibin/Downloads/Menu2/Menu/SwiftUI/ContentServiceCombine.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "5BD98104-F5D1-4553-9FA1-8C163397D51B - 7ffdfa322669a6ed"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Combine.Subscribers.Completion&lt;Swift.Error&gt;) -&gt; () in Menu.ContentServiceViewModel.fetchdata() -&gt; ()"
+                  moduleName = "Menu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tibin/Downloads/Menu2/Menu/SwiftUI/ContentServiceCombine.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "5BD98104-F5D1-4553-9FA1-8C163397D51B - 90768ea94ad6576a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Menu.ContentServiceViewModel.fetchdata() -&gt; ()"
+                  moduleName = "Menu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tibin/Documents/10x%20Enginner/iOS%20Learning/Playgrounds/Menu2/Menu/SwiftUI/ContentServiceCombine.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  uuid = "5BD98104-F5D1-4553-9FA1-8C163397D51B - 223e0ffd23f6fedd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Menu.ContentServiceViewModel.fetchdata() -&gt; ()"
+                  moduleName = "Menu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tibin/Documents/10xEnginner/iOSLearning/100DayOfCode/SwiftUI/Menu2/Menu/SwiftUI/ContentServiceCombine.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "140">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A0B2E8A2-8D0E-4A7B-801C-E089EB428964"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Menu/SwiftUI/ContentServiceCombine.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "fetchdata()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "84DB2DCB-25ED-475C-BCD7-025FBCD05DC5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Menu/SwiftUI/SrollableSearchView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "84DB2DCB-25ED-475C-BCD7-025FBCD05DC5 - c512ba4039c6e554"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Array&lt;__C.CGRect&gt;) -&gt; () in Menu.SrollableSearchView.body.getter : some"
+                  moduleName = "Menu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tibin/Documents/10x%20Enginner/iOS%20Learning/Playgrounds/Menu2/Menu/SwiftUI/SrollableSearchView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "118"
+                  endingLineNumber = "118"
+                  offsetFromSymbolStart = "880">
+               </Location>
+               <Location
+                  uuid = "84DB2DCB-25ED-475C-BCD7-025FBCD05DC5 - c512ba4039c6e554"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Array&lt;__C.CGRect&gt;) -&gt; () in Menu.SrollableSearchView.body.getter : some"
+                  moduleName = "Menu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tibin/Documents/10x%20Enginner/iOS%20Learning/Playgrounds/Menu2/Menu/SwiftUI/SrollableSearchView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "118"
+                  endingLineNumber = "118"
+                  offsetFromSymbolStart = "720">
+               </Location>
+               <Location
+                  uuid = "84DB2DCB-25ED-475C-BCD7-025FBCD05DC5 - c512ba4039c6e554"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Array&lt;__C.CGRect&gt;) -&gt; () in Menu.SrollableSearchView.body.getter : some"
+                  moduleName = "Menu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tibin/Documents/10x%20Enginner/iOS%20Learning/Playgrounds/Menu2/Menu/SwiftUI/SrollableSearchView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "118"
+                  endingLineNumber = "118"
+                  offsetFromSymbolStart = "1916">
+               </Location>
+               <Location
+                  uuid = "84DB2DCB-25ED-475C-BCD7-025FBCD05DC5 - 8e23154d29896575"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Array&lt;__C.CGRect&gt;) -&gt; () in Menu.SrollableSearchView.body.getter : some"
+                  moduleName = "Menu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tibin/Documents/10xEnginner/iOSLearning/100DayOfCode/SwiftUI/Menu2/Menu/SwiftUI/SrollableSearchView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "123"
+                  endingLineNumber = "123"
+                  offsetFromSymbolStart = "1556">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C87364D7-771B-47B3-A5D7-E19AD2392481"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Menu/SwiftUI/SrollableSearchView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

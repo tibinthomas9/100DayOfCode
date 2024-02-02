@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "365135A6-DEDC-4B3B-AD3C-40C5B2D84F02"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7E723EB9-7405-4313-9C65-4A6779F2A723"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Menu/UIKit/ContentService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "getItemData(onCompletion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7E723EB9-7405-4313-9C65-4A6779F2A723 - 813e18debfa54df6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Foundation.Data) -&gt; () in Menu.ContentService.getItemData(onCompletion: (Swift.Array&lt;Menu.MenuItems&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Menu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tibin/Downloads/Menu/Menu/UIKit/ContentService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "348">
+               </Location>
+               <Location
+                  uuid = "7E723EB9-7405-4313-9C65-4A6779F2A723 - 813e18debfa54df6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Foundation.Data) -&gt; () in Menu.ContentService.getItemData(onCompletion: (Swift.Array&lt;Menu.MenuItems&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Menu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tibin/Downloads/Menu/Menu/UIKit/ContentService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "336">
+               </Location>
+               <Location
+                  uuid = "7E723EB9-7405-4313-9C65-4A6779F2A723 - 813e18debfa54df6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Foundation.Data) -&gt; () in Menu.ContentService.getItemData(onCompletion: (Swift.Array&lt;Menu.MenuItems&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Menu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tibin/Downloads/Menu/Menu/UIKit/ContentService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "476">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "72B33A42-F087-4874-9207-CBFE2A24B32A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Menu/SwiftUI/MainView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "211"
+            endingLineNumber = "211"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "72B33A42-F087-4874-9207-CBFE2A24B32A - b3d8f6f840fe22e2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Menu.ImageDownloader.downloadImage(imageURL: Swift.String) -&gt; ()"
+                  moduleName = "Menu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tibin/Documents/10x%20Enginner/iOS%20Learning/Playgrounds/Menu/Menu/SwiftUI/MainView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "212"
+                  endingLineNumber = "212"
+                  offsetFromSymbolStart = "776">
+               </Location>
+               <Location
+                  uuid = "72B33A42-F087-4874-9207-CBFE2A24B32A - d071f838fe98bae2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Menu.ImageDownloader.downloadImage(imageURL: Swift.String) -&gt; ()"
+                  moduleName = "Menu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tibin/Documents/10x%20Enginner/iOS%20Learning/Playgrounds/Menu/Menu/SwiftUI/MainView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "212"
+                  endingLineNumber = "212"
+                  offsetFromSymbolStart = "452">
+               </Location>
+               <Location
+                  uuid = "72B33A42-F087-4874-9207-CBFE2A24B32A - 37ceb9f38e416a38"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Menu.ImageDownloader.downloadImage(imageURL: Swift.String) -&gt; ()"
+                  moduleName = "Menu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tibin/Documents/10x%20Enginner/iOS%20Learning/Playgrounds/Menu/Menu/SwiftUI/MainView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "211"
+                  endingLineNumber = "211"
+                  offsetFromSymbolStart = "112">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "985D3B15-B454-4D59-9D16-82A9BE831461"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Menu/SwiftUI/MainView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "209"
+            endingLineNumber = "209"
+            landmarkName = "ContentItems"
+            landmarkType = "14">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FABC77AD-D467-4FDA-8BDB-4FE6A87473F7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Menu/SwiftUI/MainView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "210"
+            endingLineNumber = "210"
+            landmarkName = "ContentItems"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "FABC77AD-D467-4FDA-8BDB-4FE6A87473F7 - 37ceb9f38e416a07"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Menu.ImageDownloader.downloadImage(imageURL: Swift.String) -&gt; ()"
+                  moduleName = "Menu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tibin/Documents/10x%20Enginner/iOS%20Learning/Playgrounds/Menu/Menu/SwiftUI/MainView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "210"
+                  endingLineNumber = "210"
+                  offsetFromSymbolStart = "476">
+               </Location>
+               <Location
+                  uuid = "FABC77AD-D467-4FDA-8BDB-4FE6A87473F7 - d071f838fe98ba3c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Menu.ImageDownloader.downloadImage(imageURL: Swift.String) -&gt; ()"
+                  moduleName = "Menu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tibin/Documents/10x%20Enginner/iOS%20Learning/Playgrounds/Menu/Menu/SwiftUI/MainView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "210"
+                  endingLineNumber = "210"
+                  offsetFromSymbolStart = "220">
+               </Location>
+               <Location
+                  uuid = "FABC77AD-D467-4FDA-8BDB-4FE6A87473F7 - 37ceb9f38e416a66"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Menu.ImageDownloader.downloadImage(imageURL: Swift.String) -&gt; ()"
+                  moduleName = "Menu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tibin/Documents/10x%20Enginner/iOS%20Learning/Playgrounds/Menu/Menu/SwiftUI/MainView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "209"
+                  endingLineNumber = "209"
+                  offsetFromSymbolStart = "72">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2697CB12-329B-481D-9EDF-9003506AA8F6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Menu/SwiftUI/MainView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "206"
+            endingLineNumber = "206"
+            landmarkName = "MenuItems"
+            landmarkType = "14">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
