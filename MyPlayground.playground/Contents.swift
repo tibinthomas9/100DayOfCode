@@ -3,6 +3,43 @@ import UIKit
 
 
 class Solution {
+    
+    
+    
+    //Day 3
+    /* Input: prices = [7,1,5,3,6,4]
+     Output: 5
+     Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5.
+     Note that buying on day 2 and selling on day 1 is not allowed because you must buy before you sell.
+     */
+    func maxProfit(_ prices: [Int]) -> Int {
+        var l = 1
+        
+        var maxProfit = 0
+        var buyPrice = prices[0]
+        
+        // loop through array from start
+        while l < prices.count {
+            // if pricce greater than last check profit and save else buy
+            if  prices[l] > buyPrice {
+                var profit = prices[l] - buyPrice
+                if profit > maxProfit {
+                    maxProfit = profit
+                }
+            } else {
+                buyPrice = prices[l]
+            }
+            print(maxProfit, l)
+            l = l + 1
+        }
+        return maxProfit
+    }
+    
+}
+
+var prices = [7,1,5,3,6,4]
+Solution().maxProfit(prices)
+    
     // Container With Most Water
     
     
@@ -89,10 +126,10 @@ class Solution {
     }
     
    
-}
+//}
 //var nums = [1,1,1,2,2,3]
 //Solution().topKFrequent3(nums, 2)
 
 
-var height = [1,8,6,2,5,4,8,3,7]
-Solution().maxArea(height)
+//var height = [1,8,6,2,5,4,8,3,7]
+//Solution().maxArea(height)
