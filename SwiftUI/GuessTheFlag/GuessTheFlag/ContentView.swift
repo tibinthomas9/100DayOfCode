@@ -13,6 +13,7 @@ struct ContentView: View {
     @State private var correctAnswer = Int.random(in: 0...2)
     @State private var scoreTilte: String = ""
     @State private var showingScore: Bool = false
+    @State private var scoreChanged: Bool = false
     @State private var score: Int = 0
     
     var body: some View {
@@ -36,13 +37,21 @@ struct ContentView: View {
                            
                     }
                     
-                    ForEach(0..<3) { number in
+                    ForEach(0..<3, id: \.self) { number in
                         Button {
                             flagTapped(number)
                         } label: {
                             Image(countries[number])
                                 .clipShape(Capsule())
                                 .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                                .opacity(scoreChanged ? (number == correctAnswer ? 1 : 0.25)  : 1)
+                                .scaleEffect((scoreChanged ? (number == correctAnswer ? 1 : 0.25)  : 1))
+                                .rotation3DEffect(
+                                    .degrees(scoreChanged && number == correctAnswer ? 360: 0),
+                                                          axis: /*@START_MENU_TOKEN@*/(x: 0.0, y: 1.0, z: 0.0)/*@END_MENU_TOKEN@*/
+                                        
+                                )
+                                .animation(scoreChanged ? .smooth: nil, value: scoreChanged)
                         }
                     }
                 }.frame(maxWidth: .infinity)
@@ -73,11 +82,15 @@ struct ContentView: View {
             scoreTilte = "Wrong"
             score -= 1
         }
-        showingScore = true
+        scoreChanged = true
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+            showingScore = true
+        }
         
     }
     
      func askQuestion() {
+         scoreChanged = false
         countries.shuffle()
         correctAnswer = Int.random(in: 0...2)
     }

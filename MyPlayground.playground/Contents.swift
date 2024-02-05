@@ -5,6 +5,51 @@ import UIKit
 class Solution {
     
     /*
+     Input: s = "abcabcbb"
+     Output: 3
+     Explanation: The answer is "abc", with the length of 3.
+     */
+    
+    func lengthOfLongestSubstring(_ s: String) -> Int {
+        // move through string from left to right
+        // add the count of char to countDict
+        // if a chars count become more than 1, move left by 1 until count becomes 1, also calculate length by
+        var l = 0, r = 0
+        let strArray = Array(s)
+        var charCount: [Character: Int] = [:]
+        var maxLength = 1
+        while (r < strArray.count) {
+            let righChar = strArray[r]
+            charCount[righChar, default: 0] += 1
+            r = r + 1
+            
+            while(charCount[righChar, default: 0] > 1) {
+                let leftChar = strArray[l]
+                charCount[leftChar, default: 0] -= 1
+                l = l + 1
+            }
+            maxLength = max(maxLength, r - l)
+            
+            
+            
+//            let charCountR = charCount[strArray[r]] ?? 0
+//            if charCountR > 0 {
+//                charCount[strArray[l]] =  (charCount[strArray[l]] ?? 0) - 1
+//                l = l + 1
+//            } else {
+//                charCount[strArray[r]] = 1
+//                r = r + 1
+//            }
+//            maxLength = max(maxLength, r - l)
+        }
+        
+        return maxLength
+    }
+    
+}
+var s = "abcabcbb"
+    print(Solution().lengthOfLongestSubstring(s))
+    /*
      Input: s = "A man, a plan, a canal: Panama"
      Output: true
      */
@@ -20,9 +65,9 @@ class Solution {
         }
         return true
     }
-}
-    var s = "A man, a plan, a canal: Panama"
-    print(Solution().isPalindrome(s))
+//}
+//    var s = "A man, a plan, a canal: Panama"
+//    print(Solution().isPalindrome(s))
     //Day 3
     /* Input: prices = [7,1,5,3,6,4]
      Output: 5
