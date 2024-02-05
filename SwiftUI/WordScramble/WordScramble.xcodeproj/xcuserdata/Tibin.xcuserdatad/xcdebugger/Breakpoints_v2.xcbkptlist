@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "A3C77D51-26FE-438B-9F39-2CE69D7EA15D"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F55A307E-607B-4130-B30D-FC9C100BDCB8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WordScramble/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "startGame()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F55A307E-607B-4130-B30D-FC9C100BDCB8 - 595d8a757c48b3e2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WordScramble.ContentView.startGame() -&gt; ()"
+                  moduleName = "WordScramble"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tibin/Documents/10xEnginner/iOSLearning/100DayOfCode/SwiftUI/WordScramble/WordScramble/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "1264">
+               </Location>
+               <Location
+                  uuid = "F55A307E-607B-4130-B30D-FC9C100BDCB8 - cf920448ef001c12"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in WordScramble.ContentView.startGame() -&gt; ()"
+                  moduleName = "WordScramble"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tibin/Documents/10xEnginner/iOSLearning/100DayOfCode/SwiftUI/WordScramble/WordScramble/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "124">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "35E7FDE2-980C-4740-B2F1-CA087F37452A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WordScramble/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
+            landmarkName = "startGame()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "35E7FDE2-980C-4740-B2F1-CA087F37452A - 595d8a757c48b2d8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WordScramble.ContentView.startGame() -&gt; ()"
+                  moduleName = "WordScramble"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tibin/Documents/10xEnginner/iOSLearning/100DayOfCode/SwiftUI/WordScramble/WordScramble/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "340">
+               </Location>
+               <Location
+                  uuid = "35E7FDE2-980C-4740-B2F1-CA087F37452A - 595d8a757c48b2d8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WordScramble.ContentView.startGame() -&gt; ()"
+                  moduleName = "WordScramble"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tibin/Documents/10xEnginner/iOSLearning/100DayOfCode/SwiftUI/WordScramble/WordScramble/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "888">
+               </Location>
+               <Location
+                  uuid = "35E7FDE2-980C-4740-B2F1-CA087F37452A - 595d8a757c48b2d8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WordScramble.ContentView.startGame() -&gt; ()"
+                  moduleName = "WordScramble"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tibin/Documents/10xEnginner/iOSLearning/100DayOfCode/SwiftUI/WordScramble/WordScramble/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "296">
+               </Location>
+               <Location
+                  uuid = "35E7FDE2-980C-4740-B2F1-CA087F37452A - 595d8a757c48b2d8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WordScramble.ContentView.startGame() -&gt; ()"
+                  moduleName = "WordScramble"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tibin/Documents/10xEnginner/iOSLearning/100DayOfCode/SwiftUI/WordScramble/WordScramble/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "756">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
