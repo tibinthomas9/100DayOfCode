@@ -4,8 +4,25 @@ import UIKit
 
 class Solution {
     
-    
-    
+    /*
+     Input: s = "A man, a plan, a canal: Panama"
+     Output: true
+     */
+    func isPalindrome(_ s: String) -> Bool {
+        let input = Array(s.filter { $0.isLetter || $0.isNumber }.lowercased())
+        var l = 0, r = input.count - 1
+        while(l < r) {
+            if input[l] != input[r] {
+                return false
+            }
+            l += 1
+            r -= 1
+        }
+        return true
+    }
+}
+    var s = "A man, a plan, a canal: Panama"
+    print(Solution().isPalindrome(s))
     //Day 3
     /* Input: prices = [7,1,5,3,6,4]
      Output: 5
@@ -35,10 +52,11 @@ class Solution {
         return maxProfit
     }
     
-}
 
-var prices = [7,1,5,3,6,4]
-Solution().maxProfit(prices)
+//var nums = [1,1,1,2,2,3]
+//Solution().topKFrequent3(nums, 2)
+//var prices = [7,1,5,3,6,4]
+//Solution().maxProfit(prices)
     
     // Container With Most Water
     
