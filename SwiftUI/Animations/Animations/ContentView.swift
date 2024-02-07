@@ -7,7 +7,212 @@
 
 import SwiftUI
 
+
+
+
+
 struct ContentView: View {
+    @State private var amplitude: CGFloat = 50.0
+    @State private var frequency: CGFloat = 1.0
+    @State private var phase: CGFloat = 0.0
+    @State private var knobPosition: CGPoint = .zero
+
+    var body: some View {
+        VStack {
+            ScrollView(.horizontal) {
+                
+                
+                SineWaveShape(amplitude: amplitude, frequency: frequency, phase: phase)
+                    .stroke(Color.blue, lineWidth: 2)
+                    .frame(width: 800, height: 200)
+                
+                    .padding()
+                    .overlay(Knob(position: $knobPosition, amplitude: amplitude, frequency: frequency, phase: phase))
+            }.scrollIndicators(.hidden)
+                .frame(height: 400)
+            Text("Amplitude: \(amplitude)")
+            Slider(value: $amplitude, in: 10...100, step: 1)
+
+            Text("Frequency: \(frequency)")
+            Slider(value: $frequency, in: 0.1...5, step: 0.1)
+
+            Text("Phase: \(phase)")
+            Slider(value: $phase, in: 0...360, step: 1)
+        }
+        .padding()
+    }
+
+    struct Knob: View {
+        @Binding var position: CGPoint
+        var amplitude: CGFloat
+        var frequency: CGFloat
+        var phase: CGFloat
+
+        var body: some View {
+            Circle()
+                .fill(Color.red)
+                .frame(width: 20, height: 20)
+                .position(calculateKnobPosition())
+                .gesture(DragGesture()
+                    .onChanged { value in
+                        position = value.location
+                    }
+                )
+        }
+
+        private func calculateKnobPosition() -> CGPoint {
+            let x = position.x
+            let y = amplitude * sin(frequency * x + phase) + UIScreen.main.bounds.midY
+            return CGPoint(x: x, y: y)
+        }
+    }
+}
+
+struct SineWaveShape: Shape {
+    var amplitude: CGFloat
+    var frequency: CGFloat
+    var phase: CGFloat
+
+    func path(in rect: CGRect) -> Path {
+        var path = Path()
+
+        let step = 1.0
+        let numberOfPoints = Int(rect.width / CGFloat(step))
+
+        path.move(to: CGPoint(x: 0, y: rect.midY))
+
+        for i in 0..<numberOfPoints {
+            let x = CGFloat(i) * CGFloat(step)
+            let y = amplitude * sin(frequency * x + phase) + rect.midY
+            path.addLine(to: CGPoint(x: x, y: y))
+        }
+
+        return path
+    }
+}
+
+
+
+//struct ContentView: View {
+//    @State private var amplitude: CGFloat = 50.0
+//    @State private var frequency: CGFloat = 1.0
+//    @State private var phase: CGFloat = 0.0
+//    @State private var knobPosition: CGPoint = .zero
+//
+//    var body: some View {
+//        VStack {
+//            SineWaveShape(amplitude: amplitude, frequency: frequency, phase: phase)
+//                .stroke(Color.blue, lineWidth: 2)
+//                .frame(height: 200)
+//                .padding()
+//                .overlay(Knob(position: $knobPosition))
+//
+//            Text("Amplitude: \(amplitude)")
+//            Slider(value: $amplitude, in: 10...100, step: 1)
+//
+//            Text("Frequency: \(frequency)")
+//            Slider(value: $frequency, in: 0.1...5, step: 0.1)
+//
+//            Text("Phase: \(phase)")
+//            Slider(value: $phase, in: 0...360, step: 1)
+//        }
+//        .padding()
+//    }
+//
+//    struct Knob: View {
+//        @Binding var position: CGPoint
+//
+//        var body: some View {
+//            Circle()
+//                .fill(Color.red)
+//                .frame(width: 20, height: 20)
+//                .position(position)
+//                .gesture(DragGesture()
+//                    .onChanged { value in
+//                        position = value.location
+//                    }
+//                )
+//        }
+//    }
+//}
+
+//struct SineWaveShape: Shape {
+//    var amplitude: CGFloat
+//    var frequency: CGFloat
+//    var phase: CGFloat
+//
+//    func path(in rect: CGRect) -> Path {
+//        var path = Path()
+//
+//        let step = 1.0
+//        let numberOfPoints = Int(rect.width / CGFloat(step))
+//
+//        path.move(to: CGPoint(x: 0, y: rect.midY))
+//
+//        for i in 0..<numberOfPoints {
+//            let x = CGFloat(i) * CGFloat(step)
+//            let y = amplitude * sin(frequency * x + phase) + rect.midY
+//            path.addLine(to: CGPoint(x: x, y: y))
+//        }
+//
+//        return path
+//    }
+//}
+
+
+
+
+//struct ContentView: View {
+//    @State private var amplitude: CGFloat = 50.0
+//    @State private var frequency: CGFloat = 1.0
+//    @State private var phase: CGFloat = 0.0
+//
+//    var body: some View {
+//        VStack {
+//            SineWaveShape(amplitude: amplitude, frequency: frequency, phase: phase)
+//                .stroke(Color.blue, lineWidth: 2)
+//                .frame(height: 200)
+//                .padding()
+//
+//            Text("Amplitude: \(amplitude)")
+//            Slider(value: $amplitude, in: 10...100, step: 1)
+//
+//            Text("Frequency: \(frequency)")
+//            Slider(value: $frequency, in: 0.1...5, step: 0.1)
+//
+//            Text("Phase: \(phase)")
+//            Slider(value: $phase, in: 0...360, step: 1)
+//        }
+//        .padding()
+//    }
+//}
+
+//struct SineWaveShape: Shape {
+//    var amplitude: CGFloat
+//    var frequency: CGFloat
+//    var phase: CGFloat
+//
+//    func path(in rect: CGRect) -> Path {
+//        var path = Path()
+//
+//        let step = 1.0
+//        let numberOfPoints = Int(rect.width / CGFloat(step))
+//
+//        path.move(to: CGPoint(x: 0, y: rect.midY))
+//
+//        for i in 0..<numberOfPoints {
+//            let x = CGFloat(i) * CGFloat(step)
+//            let y = amplitude * sin(frequency * x + phase) + rect.midY
+//            path.addLine(to: CGPoint(x: x, y: y))
+//        }
+//
+//        return path
+//    }
+//}
+
+
+
+struct ContentViewa: View {
     @State private var isShowingRed = false
     
     var body: some View {

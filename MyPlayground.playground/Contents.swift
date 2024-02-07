@@ -1,8 +1,60 @@
 import UIKit
 
-
+/*
+ Input: nums = [1,2,3,4]
+ Output: [24,12,8,6]
+ */
 
 class Solution {
+    
+    func productExceptSelf(_ nums: [Int]) -> [Int] {
+        var prefix = [Int]()
+        var postfix =  [Int]()
+        var result =  [Int]()
+        
+        var prod = 1
+         nums.forEach { num in
+            prod *= num
+            prefix.append(prod)
+        }
+        prod = 1
+        nums.reversed().forEach { num in
+            prod *= num
+            postfix.append(prod)
+        }
+        postfix.reverse()
+        print(prefix)
+        print(postfix)
+        for i in  0..<nums.count {
+            let prefix = i == 0 ? 1 : prefix[i - 1]
+            let postfix = i == (nums.count - 1)   ? 1 : postfix[i + 1]
+            print(prefix,postfix)
+            result.append (prefix * postfix)
+        }
+        return result
+        
+        
+        //        let product = nums.reduce(1) { $0 * $1 }
+        //        return nums.map { product / $0 }
+//        var result = [Int]()
+//        for (i,n) in nums.enumerated() {
+//            var product = 1
+//            for (j, item) in nums.enumerated() {
+//                if i != j {
+//                    product *= item
+//                }
+//                
+//            }
+//            result.append(product)
+//
+//            
+//        }
+//        return result
+    }
+}
+
+var nums = [1,2,3,4]
+    print(Solution().productExceptSelf(nums))
     
     /*
      Input: s = "abcabcbb"
@@ -46,9 +98,9 @@ class Solution {
         return maxLength
     }
     
-}
-var s = "abcabcbb"
-    print(Solution().lengthOfLongestSubstring(s))
+
+//var s = "abcabcbb"
+//    print(Solution().lengthOfLongestSubstring(s))
     /*
      Input: s = "A man, a plan, a canal: Panama"
      Output: true
