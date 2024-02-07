@@ -1,12 +1,43 @@
 import UIKit
 
 /*
- Input: nums = [1,2,3,4]
- Output: [24,12,8,6]
+ Input: s = "()[]{}"
+ Output: true
  */
+
 
 class Solution {
     
+    func isValid(_ s: String) -> Bool {
+        let braces: [Character: Character] = ["]":"[", ")":"(", "}":"{"]
+        
+        var stack = [Character]()
+        for char in s {
+            
+            // closing
+            
+            if braces.keys.contains(char) {
+                let item = stack.popLast()
+                if braces[char] != item {
+                    return false
+                }
+            } else {
+                // opening
+                stack.append(char)
+            }
+            
+        }
+        return stack.isEmpty
+    }
+}
+
+var s = "(()[]]{})"
+print(Solution().isValid(s))
+
+/*
+ Input: nums = [1,2,3,4]
+ Output: [24,12,8,6]
+ */
     func productExceptSelf(_ nums: [Int]) -> [Int] {
         var prefix = [Int]()
         var postfix =  [Int]()
@@ -51,10 +82,10 @@ class Solution {
 //        }
 //        return result
     }
-}
+    //}
 
-var nums = [1,2,3,4]
-    print(Solution().productExceptSelf(nums))
+//var nums = [1,2,3,4]
+//    print(Solution().productExceptSelf(nums))
     
     /*
      Input: s = "abcabcbb"
