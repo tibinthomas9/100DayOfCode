@@ -6,10 +6,98 @@
 //
 
 import SwiftUI
+
+import SwiftUI
+
+import SwiftUI
+
+struct MovingSemiCircle2: Shape{
+    var progress: Double
+    
+    var animatableData: Double {
+        get { progress }
+        set { progress = newValue }
+    }
+
+    func path(in rect: CGRect) -> Path {
+        let radius: CGFloat = min(rect.width, rect.height) / 2
+        let center = CGPoint(x: rect.midX, y: rect.midY)
+
+        var path = Path()
+
+        path.addArc(
+            center: center,
+            radius: radius,
+            startAngle: .degrees(0),
+            endAngle: .degrees(180 * progress),
+            clockwise: false
+        )
+
+        return path
+    }
+}
+
+struct ContentView2: View {
+    @State private var progress: Double = 0.0
+
+    var body: some View {
+        ZStack {
+            Circle()
+                .stroke(Color.blue, lineWidth: 10)
+                .frame(width: 200, height: 200)
+
+            MovingSemiCircle2(progress: progress)
+                .stroke(Color.red, lineWidth: 10)
+                .frame(width: 200, height: 200)
+                .rotationEffect(.degrees(180))
+        }
+        .onAppear {
+            withAnimation(Animation.easeInOut(duration: 2).repeatForever(autoreverses: false)) {
+                self.progress = 1.0
+            }
+        }
+    }
+}
+
+
+struct MovingSemiCircle: View {
+    @State private var trimEnd: CGFloat = 0.0
+    @State private var rotation: Double = 180
+
+    var body: some View {
+        ZStack {
+            Circle()
+                .stroke(Color.blue, lineWidth: 10)
+                .frame(width: 200, height: 200)
+
+            Path { path in
+                let radius: CGFloat = 100
+                let center = CGPoint(x: 100, y: 100)
+                let startAngle: Angle = .degrees(0)
+                let endAngle: Angle = .degrees(180)
+
+                path.addArc(center: center, radius: radius, startAngle: startAngle, endAngle: endAngle, clockwise: false)
+            }
+            .trim(from: 0, to: trimEnd)
+            .stroke(Color.red, lineWidth: 30)
+            .frame(width: 200, height: 200)
+           .rotationEffect(.degrees(rotation))
+        }
+        .onAppear {
+            withAnimation(Animation.easeInOut(duration: 2).repeatForever(autoreverses: false)) {
+                self.trimEnd = 1.0
+                self.rotation = 360
+            }
+        }
+    }
+}
+
+
+
 struct AddView: View {
     
     @State private var name = ""
-    @State private var type = "personal"
+    @State private var type = "Personal"
     @State private var amount = 0.0
     @Environment(\.dismiss) var dismiss
     
@@ -19,24 +107,31 @@ struct AddView: View {
     
     var body: some View {
         NavigationStack {
-            Form {
-                TextField("Name", text: $name)
-                Picker("Type", selection: $type) {
-                    ForEach(types, id: \.self) {
-                        Text($0)
+            VStack {
+                Circle()
+                    .fill(.red)
+                    .overlay {
+                        Circle().stroke(lineWidth: 4)
                     }
-                }
-                .pickerStyle(.automatic)
-                TextField("Amount", value: $amount, format: .currency(code: "USD"))
-                    .keyboardType(.decimalPad)
-                
-            }.navigationTitle("Add New")
-                .toolbar {
-                    Button("save") {
-                        expenses.items.append(ExpenseItem(amount: amount, name: name, type: type))
-                        dismiss()
+                Form {
+                    TextField("Name", text: $name)
+                    Picker("Type", selection: $type) {
+                        ForEach(types, id: \.self) {
+                            Text($0)
+                        }
                     }
-                }
+                    .pickerStyle(.automatic)
+                    TextField("Amount", value: $amount, format: .currency(code: "USD"))
+                        .keyboardType(.decimalPad)
+                    
+                }.navigationTitle("Add New")
+                    .toolbar {
+                        Button("save") {
+                            expenses.items.append(ExpenseItem(amount: amount, name: name, type: type))
+                            dismiss()
+                        }
+                    }
+            }
         }
     }
 }
@@ -103,16 +198,17 @@ class Expenses {
     var items = [ExpenseItem]() {
         didSet {
             if let encoded = try?  JSONEncoder().encode(items) {
-                UserDefaults.standard.setValue(encoded, forKey: "expenses")
+                UserDefaults.standard.set(encoded, forKey: "expense")
             }
         }
     }
     
     init() {
-        if let data = UserDefaults.standard.data(forKey: "expenses"), let decoded = try? JSONDecoder().decode([ExpenseItem].self, from: data) {
+        if let data = UserDefaults.standard.data(forKey: "expense"), let decoded = try? JSONDecoder().decode([ExpenseItem].self, from: data) {
             
             items = decoded
         } else {
+            print("init else")
             items = []
         }
     }
