@@ -1,5 +1,73 @@
 import UIKit
 
+
+
+class MinStack {
+    
+    var stackStore: [Int]
+    var minStack: [Int]
+
+    init() {
+        stackStore = []
+        minStack = []
+    }
+    
+    func push(_ val: Int) {
+        if stackStore.count < 1 {
+            stackStore.append(val)
+            minStack.append(val)
+        }
+        else {
+            
+            if val < minStack.last ?? 0 {
+                stackStore.append(val)
+                minStack.append(val)
+            } else {
+                minStack.append(minStack.last ?? 0)
+                stackStore.append(val)
+               
+            }
+        }
+    }
+    
+    func pop() {
+        stackStore.popLast()
+        minStack.popLast()
+    }
+    
+    func top() -> Int {
+        stackStore.last ?? -1
+    }
+    
+    func getMin() -> Int {
+        return minStack.last ?? 0
+    }
+}
+
+/**
+ * Your MinStack object will be instantiated and called as such:
+ * let obj = MinStack()
+ * obj.push(val)
+ * obj.pop()
+ * let ret_3: Int = obj.top()
+ * let ret_4: Int = obj.getMin()
+ */
+
+
+
+ 
+  let obj = MinStack()
+obj.push(-2);
+obj.push(0);
+obj.push(-3);
+obj.getMin(); // return -3
+obj.pop();
+obj.top();    // return 0
+obj.getMin(); // return -2
+ 
+
+
+
 /*
  Input: s = "()[]{}"
  Output: true
