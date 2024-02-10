@@ -1,6 +1,45 @@
 import UIKit
-
-
+/*
+ Input: tokens = ["2","1","+","3","*"]
+ Output: 9
+ Explanation: ((2 + 1) * 3) = 9
+ */
+class Solution9 {
+    func evalRPN(_ tokens: [String]) -> Int {
+        var stack = [String]()
+        let operation = ["+", "-", "*", "/"]
+        
+        // loop thorugh token
+        // if not operastion , push to stack
+        // else pop two and do operation
+        // and push back to stalc
+        for str in tokens {
+            if  operation.contains(str) {
+                
+                let b = Int(stack.popLast() ?? "") ?? 0
+                let a = Int(stack.popLast() ?? "") ?? 0
+                
+                switch str {
+                case "+":
+                    stack.append( String(a + b))
+                case "-":
+                    stack.append( String(a - b))
+                case "*":
+                    stack.append( String(a * b))
+                case "/":
+                    stack.append( String(a / b))
+                default:
+                    break
+                }
+            } else {
+                stack.append(str)
+            }
+        }
+        return Int(stack.first ?? "") ?? 0
+    }
+}
+let tokens = ["2","1","+","3","*"]
+Solution9().evalRPN(tokens)
 
 class MinStack {
     
