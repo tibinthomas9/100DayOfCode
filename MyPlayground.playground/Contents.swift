@@ -21,19 +21,29 @@ class Solution10 {
         func backtrack(open: Int, closed: Int) {
             if open == closed, open == n {
                 res.append(stack.joined())
+                print("base end")
+                print(stack)
                 return
             }
             
             if open < n {
                 stack.append("(")
+                print("first beg")
+                print(stack)
                 backtrack(open: open + 1, closed: closed)
                 stack.popLast()
+                print("first end")
+                print(stack)
                 
             }
             if closed < open {
                 stack.append(")")
+                print("second beg")
+                print(stack)
                 backtrack(open: open , closed: closed + 1)
                 stack.popLast()
+                print("second end")
+                print(stack)
                 
             }
         }
