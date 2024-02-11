@@ -10,12 +10,41 @@ import UIKit
  */
 class Solution10 {
     func generateParenthesis(_ n: Int) -> [String] {
-        var res = ["("]
-        var str = "("
-        for i in 2...(2 * n - 1) {
-            str.append("(")
-            str.append(")")
+        
+        // add open only if open < n
+        // add closed only if closed < open
+        // open, cloded , n equal
+        
+        var stack = [String]()
+        var res = [String]()
+        
+        func backtrack(open: Int, closed: Int) {
+            if open == closed, open == n {
+                res.append(stack.joined())
+                return
+            }
+            
+            if open < n {
+                stack.append("(")
+                backtrack(open: open + 1, closed: closed)
+                stack.popLast()
+                
+            }
+            if closed < open {
+                stack.append(")")
+                backtrack(open: open , closed: closed + 1)
+                stack.popLast()
+                
+            }
         }
+        backtrack(open: 0, closed: 0)
+        return res
+//        var res = ["("]
+//        var str = "("
+//        for i in 2...(2 * n - 1) {
+//            str.append("(")
+//            str.append(")")
+//        }
 //        for i in n...1  {
 //            var comb = ""
 //            var stack = Array(repeating: "(", count: i)
@@ -26,6 +55,7 @@ class Solution10 {
 //        }
     }
 }
+Solution10().generateParenthesis(3)
 /*
  Input: tokens = ["2","1","+","3","*"]
  Output: 9
