@@ -1,4 +1,31 @@
 import UIKit
+
+/*
+ Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
+ Input: n = 3
+ Output: ["((()))","(()())","(())()","()(())","()()()"]
+ 
+ Input: n = 1
+ Output: ["()"]
+ */
+class Solution10 {
+    func generateParenthesis(_ n: Int) -> [String] {
+        var res = ["("]
+        var str = "("
+        for i in 2...(2 * n - 1) {
+            str.append("(")
+            str.append(")")
+        }
+//        for i in n...1  {
+//            var comb = ""
+//            var stack = Array(repeating: "(", count: i)
+//            for j in i - n + 1 {
+//                
+//            }
+//            
+//        }
+    }
+}
 /*
  Input: tokens = ["2","1","+","3","*"]
  Output: 9
