@@ -1,5 +1,24 @@
 import UIKit
 
+class Solution11 {
+    func dailyTemperatures(_ temperatures: [Int]) -> [Int] {
+        var ans = [Int]()
+        for (i,temp) in temperatures.enumerated() {
+            if let nextMaxIndex = temperatures[i...].firstIndex(where: { $0 > temp }) {
+                ans.append(nextMaxIndex - i)
+            } else {
+                ans.append(0)
+            }
+        }
+       return ans
+    }
+}
+
+let temperatures = [73,74,75,71,69,72,76,73]
+Solution11().dailyTemperatures(temperatures)
+//Output: [1,1,4,2,1,1,0,0]
+
+
 /*
  Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
  Input: n = 3
