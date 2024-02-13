@@ -1,5 +1,54 @@
 import UIKit
 
+class Solution12 {
+    func isValidSudoku(_ board: [[Character]]) -> Bool {
+        
+        var rowSet = [Int: Set<Character>]()
+        var columnSet = [Int: Set<Character>]()
+        var squareSet = [Int: Set<Character>]()
+
+        for row in 0...8 {
+            for column in 0...8 {
+                let ele =  board[row][column]
+                let square = (row)/3 * 3 + (column)/3
+                if ele == "." {
+                    continue
+                }
+                if let rowSet = rowSet[row], rowSet.contains(ele) {
+                  return false
+                }
+                    
+                else if let columnSet =  columnSet[column], columnSet.contains(ele) {
+                    return false
+                }
+                
+                else if let squareSet = squareSet[square], squareSet.contains(ele) {
+                    return false
+                }
+                else {
+                   
+                    rowSet[row, default: []].insert(ele)
+                    columnSet[column, default: []].insert(ele)
+                    squareSet[square, default: []].insert(ele)
+                }
+            }
+        }
+        return true
+    }
+}
+
+let board:  [[Character]] =
+[["8","3",".",".","7",".",".",".","."]
+,["6",".",".","1","9","5",".",".","."]
+,[".","9","8",".",".",".",".","6","."]
+,["8",".",".",".","6",".",".",".","3"]
+,["4",".",".","8",".","3",".",".","1"]
+,["7",".",".",".","2",".",".",".","6"]
+,[".","6",".",".",".",".","2","8","."]
+,[".",".",".","4","1","9",".",".","5"]
+,[".",".",".",".","8",".",".","7","9"]]
+
+Solution12().isValidSudoku(board)
 class Solution11 {
     func dailyTemperatures(_ temperatures: [Int]) -> [Int] {
         var ans = [Int]()
