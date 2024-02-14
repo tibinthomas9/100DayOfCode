@@ -1,4 +1,30 @@
 import UIKit
+class Solution13 {
+    func carFleet(_ target: Int, _ position: [Int], _ speed: [Int]) -> Int {
+        var  pair = [(Int, Int)]()
+        let count = position.count
+        for (i, pos) in position.enumerated() {
+            pair.append((pos, speed[i]))
+        }
+        var stack = [Double]()
+       let sorted = pair.sorted { $0.0 > $1.0 }
+        print("sorted", sorted)
+        for (p, s) in sorted {
+            stack.append((Double(target - p)) / Double(s))
+            print(stack)
+            if stack.count >= 2 && stack.last ?? 0 <= stack.suffix(2).first ?? 0 {
+                print("pop", stack.suffix(2).first ?? 0 )
+                stack.popLast()
+            }
+        }
+        
+       
+        return stack.count
+    }
+    
+}
+let target = 10, position = [6,8], speed = [3,2]
+Solution13().carFleet(target, position, speed)
 
 class Solution12 {
     func isValidSudoku(_ board: [[Character]]) -> Bool {
