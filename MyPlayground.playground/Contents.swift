@@ -1,4 +1,51 @@
 import UIKit
+
+class Solution14 {
+    
+    func longestConsecutive2(_ nums: [Int]) -> Int {
+        let numSet = Set(nums)
+        var seen = Set<Int>()
+        var largest = 0
+        for ele in numSet {
+            var lower = ele - 1
+            var count = 1
+            if seen.contains(ele) {
+                continue
+            }
+            while numSet.contains(lower) {
+               seen.insert(lower)
+               count += 1
+               lower = lower - 1
+            }
+            largest = max(largest, count)
+        }
+        return largest
+    }
+    func longestConsecutive(_ nums: [Int]) -> Int {
+        let numSet = Set(nums)
+        var hashMap = [Int: [Int]]()
+        var largest = 0
+        for ele in nums {
+            
+            let upper = ele + 1
+            let lower = ele - 1
+            if let upperArray = hashMap[upper] {
+                hashMap[upper]?.append(ele)
+                largest = max(largest, upperArray.count)
+            }
+            if let lowerArray = hashMap[lower] {
+                hashMap[lower]?.append(ele)
+                largest = max(largest, lowerArray.count)
+            }
+        }
+        return largest
+    }
+
+}
+
+let nums = [100,4,200,1,3,2]
+Solution14().longestConsecutive2(nums)
+//Output: 4
 class Solution13 {
     func carFleet(_ target: Int, _ position: [Int], _ speed: [Int]) -> Int {
         var  pair = [(Int, Int)]()
