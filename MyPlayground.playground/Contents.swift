@@ -1,5 +1,38 @@
 import UIKit
 
+class Solution15 {
+    func trap(_ height: [Int]) -> Int {
+        // find first posiutve vlasue whuch is left edge
+        // then if next value is decrement compared to left edge
+       // push to sthack left - jeight
+      // when next value is greater or equal to left, it is right
+      // area = comined of all stack
+      // if we reach end with no right
+       // then pop
+        
+        var l = 0, r = height.count - 1
+        var lMax = height[l], rMax = height[r]
+        var res = 0
+        
+        while (l < r) {
+            if lMax <= rMax {
+                l += 1
+                lMax = max(lMax, height[l])
+                res += lMax - height[l]
+            } else  {
+                r -= 1
+                rMax = max(rMax, height[r])
+                res += rMax - height[r]
+            }
+        }
+        return res
+    }
+}
+
+let height = [0,1,0,2,1,0,1,3,2,1,2,1]
+Solution15().trap(height)
+//Output: 6
+
 class Solution14 {
     
     func longestConsecutive2(_ nums: [Int]) -> Int {
