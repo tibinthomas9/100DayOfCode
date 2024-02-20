@@ -1,5 +1,51 @@
 import UIKit
 
+class Solution16 {
+    func largestRectangleArea(_ heights: [Int]) -> Int {
+        var maxA = 0
+        for (i, height) in heights.enumerated() {
+            let area = height + calcleftArea(value: height, left: i - 1) + calcRightArea(value: height, right: i + 1)
+            maxA = max(maxA, area)
+        }
+        return maxA
+        
+        func calcleftArea(value: Int, left: Int) -> Int {
+            if left < 0 {
+                return  0
+            }
+            if heights[left] < value {
+                return 0
+            }
+            return value + calcleftArea(value: value, left: left - 1)
+            
+        }
+        
+        func calcRightArea(value: Int, right: Int) -> Int {
+            if right >= heights.count {
+                return  0
+            }
+            if heights[right] < value {
+                return 0
+            }
+            return value + calcRightArea(value: value, right: right + 1)
+            
+        }
+    }
+    
+}
+//Input: heights = [2,1,5,6,2,3]
+//Output: 10
+//let heights = [2,1,5,6,2,3]
+///Solution16().largestRectangleArea(heights)
+//Input: heights = [2,4]
+//Output: 4
+let heights = [2,4,10]
+Solution16().largestRectangleArea(heights)
+    
+    
+    
+//Output: 10
+
 class Solution15 {
     func trap(_ height: [Int]) -> Int {
         // find first posiutve vlasue whuch is left edge
