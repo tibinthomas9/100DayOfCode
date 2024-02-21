@@ -1,5 +1,24 @@
 import UIKit
 
+class Solution17 {
+    func maxProfit(_ prices: [Int]) -> Int {
+        var l = 1
+        var buyPrice = prices[0]
+        var profit = 0
+        var r = prices.count - 1
+        while (l < r) {
+            if prices[l] > buyPrice {
+                profit = max(profit, prices[l] - buyPrice)
+            } else {
+                buyPrice = prices[l]
+            }
+            l = l + 1
+        }
+      return profit
+    }
+}
+Solution17().maxProfit([7,1,5,3,6,4])
+
 class Solution16 {
     func largestRectangleArea(_ heights: [Int]) -> Int {
         var maxA = 0
