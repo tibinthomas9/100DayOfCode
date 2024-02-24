@@ -14,8 +14,8 @@
             filePath = "FunDraw/DrawingCanvasView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "142"
-            endingLineNumber = "142"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
             landmarkName = "submitDrawing(canvasView:)"
             landmarkType = "7">
             <Locations>
@@ -48,102 +48,6 @@
                   startingLineNumber = "142"
                   endingLineNumber = "142"
                   offsetFromSymbolStart = "1056">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "BC645CC2-5992-42A8-8801-B14DF976ED59"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FunDraw/DrawingItem.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
-            landmarkName = "getFeatures(image:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "BC645CC2-5992-42A8-8801-B14DF976ED59 - a2394dc07b9c3889"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "FunDraw.ImagePredictor.getFeatures(image: __C.UIImage) -&gt; Swift.Array&lt;Swift.String&gt;"
-                  moduleName = "FunDraw"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Tibin/Documents/10xEnginner/iOSLearning/FunDraw/FunDraw/DrawingItem.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "69"
-                  endingLineNumber = "69"
-                  offsetFromSymbolStart = "1008">
-               </Location>
-               <Location
-                  uuid = "BC645CC2-5992-42A8-8801-B14DF976ED59 - a2394dc07b9c382c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "FunDraw.ImagePredictor.getFeatures(image: __C.UIImage) -&gt; Swift.Array&lt;Swift.String&gt;"
-                  moduleName = "FunDraw"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Tibin/Documents/10xEnginner/iOSLearning/FunDraw/FunDraw/DrawingItem.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "66"
-                  endingLineNumber = "66"
-                  offsetFromSymbolStart = "772">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "7A387E04-7006-45C0-9739-BC58991E6684"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FunDraw/DrawingItem.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "getFeatures(image:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "7A387E04-7006-45C0-9739-BC58991E6684 - a2394dc07b9c27a3"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "FunDraw.ImagePredictor.getFeatures(image: __C.UIImage) -&gt; Swift.Array&lt;Swift.String&gt;"
-                  moduleName = "FunDraw"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Tibin/Documents/10xEnginner/iOSLearning/FunDraw/FunDraw/DrawingItem.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "47"
-                  endingLineNumber = "47"
-                  offsetFromSymbolStart = "172">
-               </Location>
-               <Location
-                  uuid = "7A387E04-7006-45C0-9739-BC58991E6684 - a2394dc07b9c27a3"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "FunDraw.ImagePredictor.getFeatures(image: __C.UIImage) -&gt; Swift.Array&lt;Swift.String&gt;"
-                  moduleName = "FunDraw"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Tibin/Documents/10xEnginner/iOSLearning/FunDraw/FunDraw/DrawingItem.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "47"
-                  endingLineNumber = "47"
-                  offsetFromSymbolStart = "176">
                </Location>
             </Locations>
          </BreakpointContent>

@@ -7,6 +7,7 @@
 
 import SwiftUI
 import PencilKit
+import MyLibrary
 
 protocol DrawingDelegate: AnyObject {
     func didProduce(drawing: DrawingItem, sender: Any?)
