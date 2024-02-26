@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C20286752B8BCD3A00C9D5A5 /* StickyScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20286742B8BCD3A00C9D5A5 /* StickyScrollView.swift */; };
 		C2919AF52B8A7EB000764B78 /* MyLibrary in Resources */ = {isa = PBXBuildFile; fileRef = C2919AF42B8A7EB000764B78 /* MyLibrary */; };
 		C2919AF82B8A7F1B00764B78 /* MyLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = C2919AF72B8A7F1B00764B78 /* MyLibrary */; };
 		C29514C22B84DADA00C93ADE /* FunDrawApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29514C12B84DADA00C93ADE /* FunDrawApp.swift */; };
@@ -20,6 +21,7 @@
 		C29514EE2B84ECE300C93ADE /* DrawingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29514ED2B84ECE300C93ADE /* DrawingItem.swift */; };
 		C29514F02B84ED7000C93ADE /* CoreMLHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29514EF2B84ED7000C93ADE /* CoreMLHandler.swift */; };
 		C29514F22B84EE0A00C93ADE /* DrawingPredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29514F12B84EE0A00C93ADE /* DrawingPredictor.swift */; };
+		C2EAB56E2B8CDBA900059F7D /* Wave.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EAB56D2B8CDBA900059F7D /* Wave.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C20286742B8BCD3A00C9D5A5 /* StickyScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyScrollView.swift; sourceTree = "<group>"; };
 		C2919AF42B8A7EB000764B78 /* MyLibrary */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MyLibrary; sourceTree = SOURCE_ROOT; };
 		C29514BE2B84DADA00C93ADE /* FunDraw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunDraw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C29514C12B84DADA00C93ADE /* FunDrawApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunDrawApp.swift; sourceTree = "<group>"; };
@@ -55,6 +58,7 @@
 		C29514ED2B84ECE300C93ADE /* DrawingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingItem.swift; sourceTree = "<group>"; };
 		C29514EF2B84ED7000C93ADE /* CoreMLHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLHandler.swift; sourceTree = "<group>"; };
 		C29514F12B84EE0A00C93ADE /* DrawingPredictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingPredictor.swift; sourceTree = "<group>"; };
+		C2EAB56D2B8CDBA900059F7D /* Wave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wave.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,8 @@
 		C29514B52B84DADA00C93ADE = {
 			isa = PBXGroup;
 			children = (
+				C2EAB56D2B8CDBA900059F7D /* Wave.swift */,
+				C20286742B8BCD3A00C9D5A5 /* StickyScrollView.swift */,
 				C29514C02B84DADA00C93ADE /* FunDraw */,
 				C29514D12B84DADC00C93ADE /* FunDrawTests */,
 				C29514DB2B84DADC00C93ADE /* FunDrawUITests */,
@@ -282,7 +288,9 @@
 			files = (
 				C29514C42B84DADA00C93ADE /* ContentView.swift in Sources */,
 				C29514C22B84DADA00C93ADE /* FunDrawApp.swift in Sources */,
+				C20286752B8BCD3A00C9D5A5 /* StickyScrollView.swift in Sources */,
 				C29514EC2B84E4AB00C93ADE /* DrawingCanvasView.swift in Sources */,
+				C2EAB56E2B8CDBA900059F7D /* Wave.swift in Sources */,
 				C29514F02B84ED7000C93ADE /* CoreMLHandler.swift in Sources */,
 				C29514EE2B84ECE300C93ADE /* DrawingItem.swift in Sources */,
 				C29514F22B84EE0A00C93ADE /* DrawingPredictor.swift in Sources */,

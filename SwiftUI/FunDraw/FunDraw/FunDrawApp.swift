@@ -11,7 +11,7 @@ import SwiftUI
 struct FunDrawApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            StickyScrollView()
         }
     }
 }
