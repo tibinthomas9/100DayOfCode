@@ -21,6 +21,7 @@
 		C29514EE2B84ECE300C93ADE /* DrawingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29514ED2B84ECE300C93ADE /* DrawingItem.swift */; };
 		C29514F02B84ED7000C93ADE /* CoreMLHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29514EF2B84ED7000C93ADE /* CoreMLHandler.swift */; };
 		C29514F22B84EE0A00C93ADE /* DrawingPredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29514F12B84EE0A00C93ADE /* DrawingPredictor.swift */; };
+		C2A2BAFD2B8E192C00995D79 /* SineWave.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A2BAFC2B8E192C00995D79 /* SineWave.swift */; };
 		C2EAB56E2B8CDBA900059F7D /* Wave.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EAB56D2B8CDBA900059F7D /* Wave.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		C29514ED2B84ECE300C93ADE /* DrawingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingItem.swift; sourceTree = "<group>"; };
 		C29514EF2B84ED7000C93ADE /* CoreMLHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLHandler.swift; sourceTree = "<group>"; };
 		C29514F12B84EE0A00C93ADE /* DrawingPredictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingPredictor.swift; sourceTree = "<group>"; };
+		C2A2BAFC2B8E192C00995D79 /* SineWave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SineWave.swift; sourceTree = "<group>"; };
 		C2EAB56D2B8CDBA900059F7D /* Wave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wave.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +94,7 @@
 			children = (
 				C2EAB56D2B8CDBA900059F7D /* Wave.swift */,
 				C20286742B8BCD3A00C9D5A5 /* StickyScrollView.swift */,
+				C2A2BAFC2B8E192C00995D79 /* SineWave.swift */,
 				C29514C02B84DADA00C93ADE /* FunDraw */,
 				C29514D12B84DADC00C93ADE /* FunDrawTests */,
 				C29514DB2B84DADC00C93ADE /* FunDrawUITests */,
@@ -292,6 +295,7 @@
 				C29514EC2B84E4AB00C93ADE /* DrawingCanvasView.swift in Sources */,
 				C2EAB56E2B8CDBA900059F7D /* Wave.swift in Sources */,
 				C29514F02B84ED7000C93ADE /* CoreMLHandler.swift in Sources */,
+				C2A2BAFD2B8E192C00995D79 /* SineWave.swift in Sources */,
 				C29514EE2B84ECE300C93ADE /* DrawingItem.swift in Sources */,
 				C29514F22B84EE0A00C93ADE /* DrawingPredictor.swift in Sources */,
 			);

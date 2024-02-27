@@ -9,9 +9,24 @@ import SwiftUI
 
 @main
 struct FunDrawApp: App {
+   
+    @State private var percentage = 25.0
     var body: some Scene {
         WindowGroup {
-            StickyScrollView()
+            VStack {
+                SineWave(frequency: 0.5, amplitude: 0.7, percentage: $percentage)
+                .overlay(alignment: .topLeading) {
+                    VStack {
+                        Text(percentage.formatted())
+                        
+                    }
+                }
+            Button("Half") {
+                percentage = 50.0
+            }
+        }
+              
+            
         }
     }
 }

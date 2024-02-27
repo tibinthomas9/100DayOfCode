@@ -190,9 +190,6 @@ struct OneSineWaveView: View {
     }
 }
 
-#Preview {
-    WavePreviewView()
-}
 
 
 
