@@ -1,8 +1,9 @@
-# Digit Classifier iOS sample
+# QuickDraw Image Classifier iOS sample
 
-<img src="https://storage.googleapis.com/khanhlvg-public.appspot.com/digit-classifier/screenshot_ios.png" />
+<img src="https://github.com/tibinthomas9/100DayOfCode/assets/29753504/8b2166cc-ef51-469a-b1a9-f27657168239" />
 
 ## Requirements
+![IMG_E4EF6ADCEBC1-1]()
 
 *  Xcode 10.3 (installed on a Mac machine)
 *  An iOS Simuiator running iOS 12 or above
