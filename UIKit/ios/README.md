@@ -1,6 +1,6 @@
 # QuickDraw Image Classifier iOS sample
 
-<img src="https://github.com/tibinthomas9/100DayOfCode/assets/29753504/8b2166cc-ef51-469a-b1a9-f27657168239" />
+<img src="https://github.com/tibinthomas9/100DayOfCode/assets/29753504/8b2166cc-ef51-469a-b1a9-f27657168239" width="200" />
 
 ## Requirements
 ![IMG_E4EF6ADCEBC1-1]()
